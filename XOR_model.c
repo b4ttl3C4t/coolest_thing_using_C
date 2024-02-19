@@ -68,8 +68,6 @@ int main(void)
         // The derivative (The rate is identical to *h* in numerical derivative).
         deri = first_symmetric_derivative(w, rate, cost);
 
-        // The differentiation (The differentiation is equal to the production of the derivative and *h*).
-        // The differentiation = The derivative * h = ((f(x+h) - f(x)) / h) * h = f(x+h) - f(x).
         w -= deri * rate;
     }
 
